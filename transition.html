@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            /* background-color: brown; */
+            border: 2px solid brown;
+            border-radius: 100%;
+            background-color: yellow;
+            /* transition-property: font-size; */
+            transition-property: width,height,transform 5s;
+            transition-duration: 5s;
+            /* transition-delay: width 5s ease,height 5s ease,transform 10s; */
+            font-size: 20px;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            transform: rotate(180deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Transition</h2>
+    </div>
+    <div class="box">
+        <h2>Transition</h2>
+    </div>
+    <div class="box">
+        <h2>Transition</h2>
+    </div>
+</body>
+
+</html>
